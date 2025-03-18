@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="../images/SHUT UP AND FISH2 .JPG" type="image/x-icon">
+    <title> Never Quit Fishing </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Small Business</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+        }
+        header {
+            background-image: url(../images/fists.jpeg);
+            background-size: contain;
+            width: 100%;
+            height: 300px;
+            background-position: center;
+            background-repeat: no-repeat;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        .page-title h1{
+            text-align: center;
+            font-family: 'Times New Roman', Times, serif;
+            margin: 20px 0;
+            color: black
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); 
+            gap: 20px; 
+            margin-top: 20px;
+            margin: 20px auto;
+            justify-content: center;
+            align-items: center;
+            max-width: 1200px;
+            
+        }
+        .product {
+            background-color: white;
+            border-radius: 8px;
+            text-align: center;
+            padding: 10px;
+            width: 80%
+           
+        }
+
+        .product img {
+            width: 80%;
+            height: auto;
+            border-radius: 8px;
+
+        }
+
+        .product-name {
+            font-size: 18px;
+            font-weight: bold;
+            margin: 10px 0;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .product:hover {
+            background-color: #f0f0f0; 
+            transition: background-color 0.3s ease;
+            border-radius: 0;
+    
+        }
+
+        nav {
+            background-color: #ff00a2;
+            overflow: hidden;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            float: left;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        nav a:hover {
+            background-color: #ffffff;
+            color: #ff00a2;
+        }
+
+        footer {
+            background-color: #f4f4f4;
+            font-family: 'Times New Roman', Times, serif;
+            color: #ff00a2;
+            text-align: center; 
+            position: fixed;
+            width: 100%;
+            bottom: 0;  
+            padding: 2px 0; 
+            box-sizing: border-box; 
+            left: 0;        
+        }
+        .container {
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+   <header></header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="products.html">Products</a>
+    </nav>
+    <div class="container">
+        <div class="page-title">
+            <h1>Best Selling</h1>
+        </div>
+        
+        <div class="container">
+
+    <div class="container">
+        <div class="product-grid">
+            <div class="product" data-name="Product 2" >
+                <img src="../images/Soft Beads 12.5mm.jpeg" alt="Soft Beads, 12.55mm">
+                <div class="product-name">Soft Beads 12.5mm</div>
+            </div>
+         <div class="product" data-name="Product 6" >
+                <img src="../images/soft bead og 35.jpeg" alt="Soft Beads OG, 35mm">
+                <div class="product-name">Soft Beads OG 35mm</div>
+            </div>
+         <div class="product" data-name="Product 1" >
+                <img src="../images/NQ Anarchy Soft Beads.jpeg" alt="Anarchy Soft Beads, 12.5mm">
+                <div class="product-name">Anarchy Soft Beads 12.5mm</div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>&copy;2025 Never Quit Fishing</p>
+    </footer>
+</body>
+</html>

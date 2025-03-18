@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="../images/SHUT UP AND FISH2 .JPG" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Never Quit Fishing</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+        }
+
+        header {
+            background-image: url(../images/fists.jpeg);
+            background-size: contain;
+            width: 100%;
+            height: 300px;
+            background-position: center;
+            background-repeat: no-repeat;
+            padding: 10px 0;
+            text-align: center;
+        }
+    
+        .page-title h1 {
+            text-align: center;
+            font-family: 'Times New Roman', Times, serif;
+            margin: 20px 0;
+            color: black
+            
+        }
+
+        .container {
+            width: 90%;
+            margin: 20px auto;
+        }
+
+        .sort-options {
+            display: flex;
+            justify-content: flex-end;
+            margin-bottom: 20px;
+        }
+
+        .sort-options select {
+            padding: 10px;
+            font-size: 14px;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            margin: 0 auto;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .product {
+            background-color: white;
+            border-radius: 8px;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .product img {
+            width: 250px;
+            height: 250px;
+            object-fit: cover;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .product-name {
+            font-size: 18px;
+            margin: 10px 0;
+            font-weight: bold;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .product-price {
+            font-size: 16px;
+            color: #333;
+        }
+
+        .product:hover {
+            background-color: #f0f0f0; 
+            transition: background-color 0.3s ease;
+            border-radius: 0;
+    
+        }
+
+        footer {
+            background-color: #f4f4f4;
+            font-family: 'Times New Roman', Times, serif;
+            color: #ff00a2;
+            text-align: center; 
+            position: fixed;
+            width: 100%;
+            bottom: 0;  
+            padding: 2px 0; 
+            box-sizing: border-box; 
+            left: 0;        
+        }
+        nav {
+            background-color: #ff00a2;
+            overflow: hidden;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            float: left;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        nav a:hover {
+            background-color: #ffffff;
+            color: #ff00a2;
+        }
+       
+
+    </style>
+</head>
+<body>
+
+<header>
+</header>
+<nav>
+    <a href="homepage1.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="products.html">Products</a>
+</nav>
+
+<div class="container">
+    <div class="page-title">
+        <h1>Products</h1>
+    </div>
+    
+    <div class="container">
+
+    <!-- Sort Options -->
+    <div class="sort-options">
+        <label for="sort-by">Sort By:</label>
+        <select id="sort-by">
+            <option value="name">Standard</option>
+            <option value="price">Price</option>
+        </select>
+    </div>
+
+    <!-- Product Grid -->
+    <div class="product-grid" id="product-grid">
+        <div class="product" data-name="Product 1" data-price="5.00">
+            <img src="../images/NQ Anarchy Soft Beads.jpeg" alt="Anarchy Soft Beads, 12.5mm">
+            <div class="product-name">Anarchy Soft Beads 12.5mm</div>
+            <div class="product-price">$5.00</div>
+        </div>
+        <div class="product" data-name="Product 2" data-price="4.75">
+            <img src="../images/Soft Beads 12.5mm.jpeg" alt="Soft Beads, 12.55mm">
+            <div class="product-name">Soft Beads 12.5mm</div>
+            <div class="product-price">$4.75</div>
+        </div>
+        <div class="product" data-name="Product 3" data-price="4.00">
+            <img src="../images/soft bead 5.jpeg" alt="Soft Beads, 5mm">
+            <div class="product-name">Soft Beads 5mm</div>
+            <div class="product-price">$4.00</div>
+        </div>
+        <div class="product" data-name="Product 4" data-price="4.50">
+            <img src="../images/soft bead 95.jpeg" alt="Soft Beads, 9.5mm">
+            <div class="product-name">Soft Beads 9.5mm</div>
+            <div class="product-price">$4.50</div>
+        </div>
+        <div class="product" data-name="Product 5" data-price="5.00">
+            <img src="../images/soft bead 14.jpeg" alt="Soft Beads, 14mm">
+            <div class="product-name">Soft Beads 14mm</div>
+            <div class="product-price">$5.00</div>
+        </div>
+        <div class="product" data-name="Product 6" data-price="5.00">
+                <img src="../images/soft bead og 35.jpeg" alt="Soft Beads OG, 35mm">
+                <div class="product-name">Soft Beads OG 35mm</div>
+                <div class="product-price">$5.00</div>
+            </div>
+         <div class="product" data-name="Product 7" data-price="4.50">
+                <img src="../images/ct soft bead 12.5.jpeg" alt="CT Soft Beads, 12.55mm">
+                <div class="product-name">CT Soft Beads 12.5mm</div>
+                <div class="product-price">$4.50</div>
+            </div>
+        <div class="product" data-name="Product 8" data-price="4.50">
+                <img src="../images/soft bead 25.jpeg" alt="Soft Beads 25mm">
+                <div class="product-name">Soft Beads 25mm</div>
+                <div class="product-price">$4.50</div>
+            </div>
+        <div class="product" data-name="Product 9" data-price="4.00">
+                <img src="../images/ct bead 8mm.jpeg" alt="CT Soft Beads 8mm">
+                <div class="product-name">CT Soft Beads 8mm</div>
+                <div class="product-price">$4.00</div>
+            </div>
+        <div class="product" data-name="Product 10" data-price="5.50">
+            <img src="../images/nfq soft bead 41.jpeg" alt="NFQ Soft Beads 41mm">
+            <div class="product-name">NFQ Soft Beads 41mm</div>
+            <div class="product-price">$5.50</div>
+        </div>
+        <!-- Additional product entries here -->
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2025 Never Quit Fishing</p>
+</footer>
+
+<script>
+    const sortSelect = document.getElementById('sort-by');
+    const productGrid = document.getElementById('product-grid');
+    
+
+    // Sort products by name or price
+    sortSelect.addEventListener('change', (event) => {
+        const sortBy = event.target.value;
+        const products = Array.from(productGrid.getElementsByClassName('product'));
+        
+        // Sort by name or price
+        products.sort((a, b) => {
+            let valueA, valueB;
+            if (sortBy === 'name') {
+                valueA = a.dataset.name.toLowerCase();
+                valueB = b.dataset.name.toLowerCase();
+            } else {
+                valueA = parseFloat(a.dataset.price);
+                valueB = parseFloat(b.dataset.price);
+            }
+            if (valueA < valueB) return -1;
+            if (valueA > valueB) return 1;
+            return 0;
+        });
+      
+        // Reorder the grid
+        products.forEach(product => {
+            productGrid.appendChild(product);
+        });
+    });
+
+        
+</script>
+
+</body>
+</html>
